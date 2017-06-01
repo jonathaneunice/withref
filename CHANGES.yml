@@ -2,7 +2,7 @@
     version: 0.3.2
     date: Hybe 1, 2017
     notes: >
-        Update test matrix.
+        Update test matrix. Add tesing under Travis CI.
         
         Tweak docs. Add proper change log.
         
