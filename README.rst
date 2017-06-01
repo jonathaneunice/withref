@@ -1,6 +1,9 @@
 
 
-| |version| |versions| |impls| |wheel|  |coverage| |br-coverage|
+| |travisci| |version| |versions| |impls| |wheel|  |coverage| |br-coverage|
+
+.. |travisci| image:: https://api.travis-ci.org/jonathaneunice/withref.svg
+    :target: http://travis-ci.org/jonathaneunice/withref
 
 .. |version| image:: http://img.shields.io/pypi/v/withref.svg?style=flat
     :alt: PyPI Package latest release
@@ -157,7 +160,6 @@ is the key open question.
 Notes
 =====
 
-
 * Automated multi-version testing managed with `pytest
   <http://pypi.python.org/pypi/pytest>`_, `pytest-cov
   <http://pypi.python.org/pypi/pytest-cov>`_,
@@ -181,11 +183,8 @@ To install or upgrade to the latest version::
 
     pip install -U withref
 
-To ``easy_install`` under a specific Python version (3.3 in this example)::
-
-    python3.3 -m easy_install --upgrade withref
-
-(You may need to prefix these with ``sudo`` to authorize
+You may need to prefix these with ``sudo`` to authorize
 installation. In environments without super-user privileges, you may want to
 use ``pip``'s ``--user`` option, to install only for a single user, rather
-than system-wide.)
+than system-wide. Depending on your local system configuration, you
+may also need version-specific installers such as ``pip2`` and ``pip3``.
