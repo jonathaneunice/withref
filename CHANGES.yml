@@ -1,0 +1,32 @@
+-
+    version: 0.3.2
+    date: Hybe 1, 2017
+    notes: >
+        Update test matrix.
+        
+        Tweak docs. Add proper change log.
+        
+-
+    version: 0.3.1
+    date: August 22, 015
+    notes: >
+        Integrates branch coverage metrics and achieves 100%
+        branch coverage
+        
+-
+    version: 0.3.0
+    date: August 18, 2015
+    notes: >
+        Integrates coverage testing and achieves 100% coverage
+
+-
+    version: 0.2.3
+    date: August 4, 2015
+    notes: >
+        Adds wheel package support.
+        
+-
+    version: 0.2.2
+    date: July 31, 2015
+    notes: >
+        Switches from BSD to Apache License 2.0
