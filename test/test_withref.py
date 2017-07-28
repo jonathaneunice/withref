@@ -2,6 +2,7 @@ from withref import ref
 from stuf import stuf
 import pytest
 
+
 def test_basic():
     a = stuf({ 'b': { 'c': { 'c1': 1 }, 'd': 44.1 } })
 
@@ -14,6 +15,7 @@ def test_basic():
 
     a_ideal = stuf({'b': {'c': {'c1': 99}, 'd': 44.1}})
     assert a == a_ideal
+
 
 def test_array_style():
 
@@ -41,6 +43,7 @@ def test_limitations():
         # but c1 is just a local value there, and not the end value
         assert a.b.c.c1 == 99   # with heavy heart
 
+
 def test_string():
     with ref("this is a string"[0:4]) as t:
         assert t == "this"
@@ -53,3 +56,19 @@ def test_exception():
         with ref("word"[0:2]) as t:
             assert t == "wo"
             raise RuntimeError('yo')
+
+
+def test_rename():
+    consider = use = treat = ref
+    x = 100
+    with ref(x) as xx:
+        assert xx == 100
+    with consider(x) as xx:
+        assert xx == 100
+    with use(x) as xx:
+        assert xx == 100
+    with treat(x) as xx:
+        assert xx == 100
+
+    with use(100) as xx:
+        assert xx == 100

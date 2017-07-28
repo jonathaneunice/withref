@@ -19,7 +19,7 @@ def lines(text):
 
 setup(
     name='withref',
-    version='0.3.2',
+    version='0.3.3',
     author='Jonathan Eunice',
     author_email='jonathan.eunice@gmail.com',
     description="Use with to simplify multi-level object dereferences, reminisent of Pascal's with statement",
